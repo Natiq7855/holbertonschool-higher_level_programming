@@ -5,7 +5,7 @@ string = "Last digit of"
 if number > 0:
     ln = number % 10
     if ln > 5:
-        print(f"{string} {number} is {ln} and is greater 5")
+        print(f"{string} {number} is {ln} and is greater than 5")
     elif ln == 0:
         print(f"{string} {number} is {ln} and is 0")
     else:
