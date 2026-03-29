@@ -1,0 +1,45 @@
+================================
+How to use 4-print_square module
+================================
+
+Importing the function:
+>>> print_square = __import__('4-print_square').print_square
+
+Normal usage:
+>>> print_square(4)
+####
+####
+####
+####
+>>> print_square(1)
+#
+>>> print_square(0)
+
+Invalid types:
+>>> print_square("9")
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+>>> print_square([5])
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Negative integer:
+>>> print_square(-1)
+Traceback (most recent call last):
+    ...
+ValueError: size must be >= 0
+
+Negative float (specifically raises TypeError per requirements):
+>>> print_square(-1.5)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
+
+Positive float:
+>>> print_square(1.5)
+Traceback (most recent call last):
+    ...
+TypeError: size must be an integer
