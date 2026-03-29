@@ -15,7 +15,7 @@ Normal usage:
     <BLANKLINE>
     thanks.
 
-Handling extra spaces after delimiters:
+Handling multiple spaces after delimiters:
     >>> text_indentation("Sentence one.   Sentence two?    Final.")
     Sentence one.
     <BLANKLINE>
@@ -28,3 +28,9 @@ Non-string input:
     Traceback (most recent call last):
         ...
     TypeError: text must be a string
+
+Missing argument:
+    >>> text_indentation()
+    Traceback (most recent call last):
+        ...
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
