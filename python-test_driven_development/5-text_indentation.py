@@ -20,7 +20,7 @@ def text_indentation(text):
 
     # Characters that trigger a double newline
     delimiters = [".", "?", ":"]
-    
+
     i = 0
     # Strip leading whitespace from the start of the entire text
     text = text.strip(" ")
