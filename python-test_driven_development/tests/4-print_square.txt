@@ -1,50 +1,56 @@
 ================================
-How to use 4-print_square module
+The ``4-print_square`` module
 ================================
 
 Importing the function:
->>> print_square = __import__('4-print_square').print_square
+    >>> print_square = __import__('4-print_square').print_square
 
-Normal usage:
->>> print_square(4)
-####
-####
-####
-####
->>> print_square(1)
-#
->>> print_square(0)
+Normal usage with an integer:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
 
-Invalid types:
->>> print_square("9")
-Traceback (most recent call last):
-    ...
-TypeError: size must be an integer
+Smallest square:
+    >>> print_square(1)
+    #
 
->>> print_square([5])
-Traceback (most recent call last):
-    ...
-TypeError: size must be an integer
+Size of zero (should print nothing):
+    >>> print_square(0)
 
-Negative integer:
->>> print_square(-1)
-Traceback (most recent call last):
-    ...
-ValueError: size must be >= 0
+Size as a float (should raise TypeError):
+    >>> print_square(1.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
 
-Negative float (specifically raises TypeError per requirements):
->>> print_square(-1.5)
-Traceback (most recent call last):
-    ...
-TypeError: size must be an integer
+Negative integer (should raise ValueError):
+    >>> print_square(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
 
-Positive float:
->>> print_square(1.5)
-Traceback (most recent call last):
-    ...
-TypeError: size must be an integer
-Missing argument:
->>> print_square()
-Traceback (most recent call last):
-    ...
-TypeError: print_square() missing 1 required positional argument: 'size'
+Negative float (should raise TypeError):
+    >>> print_square(-1.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Invalid type - string:
+    >>> print_square("9")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Invalid type - list:
+    >>> print_square([5])
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Missing the required argument:
+    >>> print_square()
+    Traceback (most recent call last):
+        ...
+    TypeError: print_square() missing 1 required positional argument: 'size'
