@@ -31,7 +31,7 @@ class Rectangle:
         """return height"""
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """value to height"""
         if not isinstance(value, int):
