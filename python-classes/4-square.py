@@ -15,7 +15,7 @@ class Square:
             size: The size of the square (no type/value verification).
         """
         self.size = size
-    
+
     @property
     def size(self):
         """
@@ -25,7 +25,7 @@ class Square:
             The private __size attribute.
         """
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """
