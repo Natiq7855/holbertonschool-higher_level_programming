@@ -65,7 +65,7 @@ class Square:
         """
         return self.__position
     
-    @position
+    @position.setter
     def position(self, value):
         """
         Sets the size of the square with validation.
