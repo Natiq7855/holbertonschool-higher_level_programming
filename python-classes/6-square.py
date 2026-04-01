@@ -7,7 +7,7 @@ It is part of a series of exercises on Object-Oriented Programming.
 
 class Square:
     """An empty class Square that defines a square."""
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initializes the square with a specific size.
 
@@ -64,7 +64,7 @@ class Square:
             The private __size attribute.
         """
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         """
@@ -95,5 +95,5 @@ class Square:
         for a in range(self.__position[1]):
             print("")
         for i in range(self.__size):
-            print(" " * self.__position[0], end = '')
+            print(" " * self.__position[0], end='')
             print("#" * self.__size)
