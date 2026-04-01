@@ -7,7 +7,7 @@ It is part of a series of exercises on Object-Oriented Programming.
 
 class Square:
     """An empty class Square that defines a square."""
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """
         Initializes the square with a specific size.
 
