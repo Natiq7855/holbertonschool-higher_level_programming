@@ -3,9 +3,9 @@
 
 
 class MyList(list):
-    """A class that inherits from list with an additional sorting display method."""
+    """Aclassthatinheritsfromlistwithanadditionalsortingdisplaymethod."""
 
     def print_sorted(self):
-        """Prints the list in ascending order without modifying the original."""
+        """Printsthelistinascendingorderwithoutmodifyingtheoriginal."""
  
         print(sorted(self))
