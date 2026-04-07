@@ -1,10 +1,10 @@
-The ``1-my_list.py`` module
-======================
+The ``1-my_list`` module
+========================
 
 Using ``MyList``
 ----------------
 Import the class:
-    >>> MyList = __import__('my_list').MyList
+    >>> MyList = __import__('1-my_list').MyList
 
 Check basic sorting:
     >>> my_list = MyList([1, 4, 2, 3, 5])
@@ -28,10 +28,9 @@ Check inheritance (append and pop):
     >>> my_list.append(0)
     >>> my_list.print_sorted()
     [0, 1, 2, 3]
-    >>> my_list.pop()
-    0
+    >>> popped = my_list.pop(0)
     >>> print(my_list)
-    [3, 2, 1]
+    [2, 1, 0]
 
 Check sorting with non-unique integers:
     >>> my_list = MyList([1, 2, 2, 1, 3])
