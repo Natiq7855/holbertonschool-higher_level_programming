@@ -7,5 +7,5 @@ class MyList(list):
 
     def print_sorted(self):
         """Printsthelistinascendingorderwithoutmodifyingtheoriginal."""
- 
+
         print(sorted(self))
