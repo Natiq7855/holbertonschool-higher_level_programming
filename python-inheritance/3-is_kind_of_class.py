@@ -5,4 +5,4 @@
 def is_kind_of_class(obj, a_class):
     """fuction of it"""
 
-    return isinstance(a_class, type(obj))
+    return isinstance(obj, a_class)
