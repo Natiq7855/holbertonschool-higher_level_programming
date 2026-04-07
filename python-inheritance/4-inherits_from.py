@@ -5,4 +5,4 @@
 def inherits_from(obj, a_class):
     """fuction of it"""
 
-    return isinstance(obj, a_class) and obj is not a_class
+    return isinstance(obj, a_class) and type(obj) is not a_class
