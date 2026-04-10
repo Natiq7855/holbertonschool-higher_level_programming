@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from abc import ABC
+from abc import ABC, abstractmethod
 """first task of abc abstarct class"""
 
 
