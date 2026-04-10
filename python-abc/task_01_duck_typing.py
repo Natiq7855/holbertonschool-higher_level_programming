@@ -41,8 +41,7 @@ class Rectangle(Shape):
         return 2 * (self.height + self.width)
 
 def shape_info(shape):
-    """duck print"""
-
+    """duck print with formatted decimals"""
+    
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
-
