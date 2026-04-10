@@ -24,7 +24,7 @@ class Circle(Shape):
     def area(self):
         return math.pi * (self.radius**2)
 
-    def perimeter(self):  # Added 'e'
+    def perimeter(self):
         return math.pi * 2 * self.radius
 
 class Rectangle(Shape):
@@ -42,6 +42,6 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     """duck print with formatted decimals"""
-    
+
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
