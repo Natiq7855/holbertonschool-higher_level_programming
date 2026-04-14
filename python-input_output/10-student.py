@@ -13,10 +13,11 @@ class Student:
 
     def to_json(self, attrs=None):
         """to json func"""
-        if isinstance(attrs, list) and all(isinstance(item, str) for item in attrs):
-            res = {}
-            for key in attrs:
-                if key in self.__dict__:
-                    res[key] = self.__dict__[key]
+        if isinstance(attrs, list):
+            if all(isinstance(item, str) for item in attrs):
+                res = {}
+                for key in attrs:
+                    if key in self.__dict__:
+                        res[key] = self.__dict__[key]
             return res
         return self.__dict__
