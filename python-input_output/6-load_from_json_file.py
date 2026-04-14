@@ -2,6 +2,7 @@
 """func of upload"""
 import json
 
+
 def load_from_json_file(filename):
     """func of"""
 
