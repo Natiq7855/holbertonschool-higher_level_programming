@@ -19,8 +19,8 @@ class CustomObject:
     def serialize(self, filename):
         """sdfsd sdfdf"""
         try:
-            with open(filename, mode="w", encoding="utf-8") as f:
-                pickle.dump(f)
+            with open(filename, mode="wb", encoding="utf-8") as f:
+                pickle.dump(self, f)
         except (OSError, pickle.PickleError):
             return None
     
