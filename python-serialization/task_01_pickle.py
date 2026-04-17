@@ -19,7 +19,7 @@ class CustomObject:
     def serialize(self, filename):
         """sdfsd sdfdf"""
         try:
-            with open(filename, mode="wb", encoding="utf-8") as f:
+            with open(filename, mode="wb") as f:
                 pickle.dump(self, f)
         except (OSError, pickle.PickleError):
             return None
@@ -30,7 +30,6 @@ class CustomObject:
         try:
             with open(filename, 'rb') as f:
                 obj = pickle.load(f)
-                # Verify that the loaded object is actually a CustomObject
                 if isinstance(obj, cls):
                     return obj
             return None
