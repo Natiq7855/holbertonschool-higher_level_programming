@@ -26,3 +26,11 @@ class SimpleAPIHandler(http.server.BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
             self.wfile.write(b"Endpoint not found")
+        
+def run_server():
+    server_address = ('', 8000)
+    httpd = http.server.HTTPServer(server_address, SimpleAPIHandler)
+    httpd.serve_forever()
+
+if __name__ == "__main__":
+    run_server()
