@@ -1,5 +1,5 @@
 -- Create user if they dont exist
-CREATE USER IF NOT EXIST 'user_0d_1'@localhost IDENTIFIED BY 'user_0d_1_pwd';
+CREATE USER IF NOT EXISTS 'user_0d_1'@localhost IDENTIFIED BY 'user_0d_1_pwd';
 
 -- GRANT ALL PRIVI ON ALL DATABASES AND TABLES TO THE USER
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@localhost WITH GRANT OPTION;
