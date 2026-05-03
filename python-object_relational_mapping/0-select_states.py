@@ -34,6 +34,5 @@ if __name__ == "__main__":
     for row in query_rows:
         print(row)
 
-    # Clean up: close the cursor and the database connection
     cursor.close()
     db.close()
