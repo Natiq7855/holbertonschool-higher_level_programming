@@ -30,7 +30,6 @@ if __name__ == "__main__":
     # Fetch all the rows from the executed query
     query_rows = cursor.fetchall()
 
-    # Display the results
     for row in query_rows:
         print(row)
 
