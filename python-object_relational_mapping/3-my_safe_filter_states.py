@@ -13,7 +13,6 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
     st_name = sys.argv[4]
 
-
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
