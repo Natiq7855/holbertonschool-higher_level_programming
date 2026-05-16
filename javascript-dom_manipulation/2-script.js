@@ -5,7 +5,6 @@ const redHeaderButton = document.querySelector('#red_header');
 // Ensure both elements exist before adding the event listener
 if (redHeaderButton && header) {
     redHeaderButton.addEventListener('click', () => {
-        // Add the 'red' class to the header element
         header.classList.add('red');
     });
 } else {
