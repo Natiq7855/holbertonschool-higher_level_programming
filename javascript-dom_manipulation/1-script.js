@@ -1,5 +1,5 @@
 const header = document.querySelector("header");
-const button = document.querySelector("red_header");
+const button = document.querySelector("#red_header");
 
 if (button && header){
     button.addEventListener('click', () => {
