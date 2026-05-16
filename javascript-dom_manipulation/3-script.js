@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const redHeaderButton = document.querySelector('#toggle_header');
+const toggleButton = document.querySelector('#toggle_header');
 
 if (toggleButton && header) {
     toggleButton.addEventListener('click', () => {
