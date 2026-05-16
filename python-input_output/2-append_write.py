@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""append func"""
+"""
+Module that contains a function to append to a file
+"""
 
 
 def append_write(filename="", text=""):
-    """function of append"""
-
-    with open(filename, mode="a", encoding="UTF-8") as f:
-        f.write(text)
-        return len(text)
+    """Appends a string to a UTF8 text file and returns char count"""
+    with open(filename, mode="a", encoding="utf-8") as f:
+        return f.write(text)

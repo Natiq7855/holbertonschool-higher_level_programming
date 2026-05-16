@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""file for func"""
+"""
+Module that contains a function to read a file
+"""
 
 
 def read_file(filename=""):
-    """read file func"""
-
-    with open(filename, encoding="UTF-8") as file:
-        print(file.read(), end="")
+    """Reads a UTF8 text file and prints it to stdout"""
+    with open(filename, mode="r", encoding="utf-8") as f:
+        print(f.read(), end="")

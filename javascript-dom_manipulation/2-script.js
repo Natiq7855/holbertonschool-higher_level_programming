@@ -1,10 +1,5 @@
-const header = document.querySelector('header');
-const redHeaderButton = document.querySelector('#red_header');
+#!/usr/bin/node
 
-if (redHeaderButton && header) {
-    redHeaderButton.addEventListener('click', () => {
-        header.classList.add('red');
-    });
-} else {
-    console.warn('Required DOM elements were not found.');
-}
+document.querySelector('#red_header').addEventListener('click', function() {
+    document.querySelector('header').classList.add('red');
+});

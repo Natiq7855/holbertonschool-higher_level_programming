@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""func of"""
+"""
+Module that contains a function that returns the dictionary
+description of an object for JSON serialization
+"""
 
 
 def class_to_json(obj):
-    """asd sad"""
-
+    """Returns the dictionary description of an obj instance"""
     return obj.__dict__

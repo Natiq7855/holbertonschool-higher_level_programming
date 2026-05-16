@@ -1,20 +1,7 @@
-const url = "https://swapi-api.hbtn.io/api/people/5/?format=json";
-const name = document.querySelector("#character");
+#!/usr/bin/node
 
-fetch(url)
-    .then(respone => {
-        if(!respone.ok){
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return respone.json();
-    })
-
+fetch('https://swapi-api.hbtn.io/api/people/5/?format=json')
+    .then(response => response.json())
     .then(data => {
-        if (name) {
-            name.textContent = data.name;
-        }
-    })
-
-    .catch(error => {
-        console.error('Error fetching character data:', error);
-    })
+        document.querySelector('#character').textContent = data.name;
+    });

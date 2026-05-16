@@ -1,26 +1,11 @@
-const url = "https://swapi-api.hbtn.io/api/films/?format=json";
-const list = document.querySelector("#list_movies");
+#!/usr/bin/node
 
-fetch(url)
-    .then(response => {
-        if(!response.ok){
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-
+fetch('https://swapi-api.hbtn.io/api/films/?format=json')
+    .then(response => response.json())
     .then(data => {
-        if(list){
-            const movies = data.results;
-
-            movies.forEach(movie => {
-                const listItem = document.createElement('li');
-                listItem.textContent = movie.title;
-                list.appendChild(listItem);
-            })
+        for (let i = 0; i < data.results.length; i++) {
+            const li = document.createElement('li');
+            li.textContent = data.results[i]['title'];
+            document.querySelector('#list_movies').appendChild(li);
         }
-    })
-
-    .catch(error => {
-        console.error('Error fetching character data:', error);
-    })
+    });

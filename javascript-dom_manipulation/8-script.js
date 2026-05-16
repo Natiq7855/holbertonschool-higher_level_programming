@@ -1,20 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const url = 'https://hellosalut.stefanbohacek.com/?lang=fr';
-    const helloElement = document.querySelector('#hello');
+#!/usr/bin/node
 
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-        })
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://hellosalut.stefanbohacek.com/?lang=fr')
+        .then(response => response.json())
         .then(data => {
-            if (helloElement) {
-                helloElement.innerHTML = data.hello;
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching greeting data:', error);
+            document.querySelector('#hello').textContent = data.hello;
         });
 });

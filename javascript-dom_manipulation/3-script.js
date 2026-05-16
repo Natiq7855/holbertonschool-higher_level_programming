@@ -1,16 +1,6 @@
-const header = document.querySelector('header');
-const toggleButton = document.querySelector('#toggle_header');
+#!/usr/bin/node
 
-if (toggleButton && header) {
-    toggleButton.addEventListener('click', () => {
-        if (header.classList.contains('green')){
-            header.classList.remove('green');
-            header.classList.add('red');
-        } else{
-            header.classList.remove('red')
-            header.classList.add('green')
-        }
-    })
-} else{
-    console.warn("wrong")
-}
+document.querySelector('#toggle_header').addEventListener('click', function() {
+    document.querySelector('header').classList.toggle('red');
+    document.querySelector('header').classList.toggle('green');
+});

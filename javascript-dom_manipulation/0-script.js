@@ -1,7 +1,3 @@
-const header = document.querySelector("header");
+#!/usr/bin/node
 
-if (header){
-    header.style.color = '#FF0000';
-} else{
-    console.warn("no header element");
-}
+document.querySelector('header').style.color = '#FF0000';

@@ -1,11 +1,9 @@
--- Create the database if it doesn't already exist
+-- Creates the database hbtn_0d_usa
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
-
--- Use the created database
+-- Use the database hbtn_0d_usa
 USE hbtn_0d_usa;
-
--- Create the table states if it doesn't already exist
+-- Creates the table states
 CREATE TABLE IF NOT EXISTS states (
-    id INT UNIQUE NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(256) NOT NULL
+    id INT UNIQUE AUTO_INCREMENT NOT NULL PRIMARY KEY, -- ID column
+    name VARCHAR(256) NOT NULL -- Name column
 );
